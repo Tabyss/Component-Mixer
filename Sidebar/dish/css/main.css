@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", "sans-serif";
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding: 10px 14px;
+  background-color: #dabfff;
+}
+.sidebar__head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.sidebar__head i {
+  margin-left: 60px;
+  background-color: #907ad6;
+}
+.sidebar__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.sidebar__logo img {
+  margin: 5px;
+  width: 40px;
+}
+.sidebar__logo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.menu__bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu__bar__list {
+  list-style: none;
+}
+.menu__bar__list__link {
+  padding: 12px 10px;
+}
+.menu__bar__list__link a {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+.menu__bar__list__link a i {
+  font-size: 30px;
+}
+.menu__bar__list__link:hover {
+  background-color: #907ad6;
+}
+.menu__bot {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+}
+.menu__bot__button {
+  display: flex;
+  align-items: center;
+  padding: 12px 10px;
+  border: 0;
+  gap: 30px;
+  background-color: #907ad6;
+}
+.menu__bot__button span {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  padding-right: 17px;
+}
+.menu__bot__button i {
+  font-size: 30px;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

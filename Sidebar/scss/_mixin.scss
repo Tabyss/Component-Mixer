@@ -1,0 +1,11 @@
+@mixin theme ($light-theme: true){
+    @if $light-theme {
+        background-color: lighten($primary-light, 100%);
+        color: lighten($base-light, 100%);
+    }
+}
+
+@mixin alignItem($align) {
+    display: flex;
+    align-items: $align;
+};

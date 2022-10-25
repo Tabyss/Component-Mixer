@@ -1,0 +1,106 @@
+@import "variable";
+@import "mixin";
+@import "func";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $text-1;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding: 10px 14px;
+  background-color: color(primary-light);
+
+  &__head {
+    @include alignItem(center);
+    margin-bottom: 40px;
+
+    & i {
+      margin-left: 60px;
+      background-color: color(secondary-light);
+    }
+  }
+
+  &__logo {
+    @include alignItem(center);
+    justify-content: center;
+    gap: 20px;
+
+    & img {
+      margin: 5px;
+      width: 40px;
+    }
+
+    & span {
+      font-size: 1.5rem;
+      font-weight: weight(bold);
+      color: color(base-light);
+    }
+  }
+}
+
+.menu{
+    &__bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__list{
+            list-style: none;
+
+            &__link{
+                padding: 12px 10px;
+        
+                & a{
+                    @include alignItem(center);
+                    gap: 30px;
+                    text-decoration: none;
+                    color: color(base-light);
+        
+                    & i {
+                        font-size: 30px;
+                    }
+                }
+        
+                &:hover{
+                    background-color: color(secondary-light);
+                }
+            }
+        }
+    }
+
+    &__bot{
+        @include alignItem(center);
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        bottom: 0;
+        
+        &__button{
+            @include alignItem(center);
+            padding: 12px 10px;
+            border: 0;
+            gap: 30px;
+            background-color: color(secondary-light);
+            
+            & span{
+                @include alignItem(center);
+                text-decoration: none;
+                color: color(base-light);
+                padding-right: 17px;
+            }
+    
+            & i {
+                font-size: 30px;
+                color: color(base-light);
+            }
+        }
+    }
+}
