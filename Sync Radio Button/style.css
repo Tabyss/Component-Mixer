@@ -9,17 +9,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .rl-option{
     position: relative;
-    height: 1.5rem;
-    width: 2rem;
-    margin: 1rem;
+    padding: 10px 14px;
+    background-color: aqua;
+}
+
+input:hover{
+    background-color: aquamarine;
+}
+
+.b-1{
+    border-radius: 20px 0 0 20px;
+}
+
+.b-3{
+    border-radius: 0 20px 20px 0;
 }
 
 .rl-option label{
     display: flex;
-    position: absolute;
     justify-content: center;
 }
 
@@ -27,8 +38,13 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    margin: 0;
+    right: 0;
+    top: 0;
     z-index: 2;
     cursor: pointer;
     opacity: 0;
+}
+
+input:checked + .rl-option{
+    background-color: aquamarine;
 }
