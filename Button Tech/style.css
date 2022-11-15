@@ -1,0 +1,105 @@
+body{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    position: relative;
+    justify-items: center;
+    height: 50px;
+}
+
+.btn__main{
+    padding: 5px 0;
+}
+
+.btn__main a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn__rig{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.btn__lef{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.btn__out{
+    height: 2px;
+    width: 30px;
+    background-color: #000;
+}
+
+.btn__in{
+    height: 30px;
+    width: 2px;
+    background-color: #000;
+}
+
+/* Button Mod */
+
+.btn__mod{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    height: 40px;
+    width: 20vw;
+    padding: 1px;
+    border: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .2s;
+}
+
+.btn__mod__body{
+    padding: 0 15px;
+    font-size: 1rem;
+    z-index: 2;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.btn__mod span{
+    background-color: #A0F302;
+    height: 35px;
+    width: 4px;
+}
+
+.btn__mod:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #000;
+}
+
+
+
+/* .btn__mod::before{
+    content: "";
+    position: absolute;
+    margin: .5px;
+    height: calc(100% - 1px);
+    width: calc(100% - 1px);
+    background-color: #A0F302;
+    transition: all .5s;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateX(100%);
+}
+
+.btn__mod:hover::before{
+    transform: translateX(0);
+} */
